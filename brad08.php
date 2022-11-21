@@ -1,5 +1,5 @@
 <?php
-    $result = $x = $y ='';
+    $result = $x = $y = $op ='';
     if ( isset($_GET['x']) && isset($_GET['y'])){
         $op = $_GET['op'];
         $x = $_GET['x'];
@@ -18,10 +18,10 @@
 <form>
     <input name="x" value='<?php echo $x; ?>'>
     <select name="op">
-        <option value='1'>加</option>
-        <option value='2'>減</option>
-        <option value='3'>x</option>
-        <option value='4'>/</option>
+        <option value='1' <?php echo ($op==1?'selected':''); ?>>加</option>
+        <option value='2' <?php echo ($op==2?'selected':''); ?>>減</option>
+        <option value='3' <?php echo ($op==3?'selected':''); ?>>x</option>
+        <option value='4' <?php echo ($op==4?'selected':''); ?>>/</option>
     </select>
     <input name="y" value='<?php echo $y; ?>'>
     <input type="submit" value="="/>
