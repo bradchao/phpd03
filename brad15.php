@@ -1,31 +1,15 @@
 <table border='1' width='100%'>
     <tr>
-        <td>
-            <?php
+        <?php
+            for ($j = 2; $j <= 5; $j++){
+                echo '<td>';
                 for($i = 1; $i <= 9; $i++){
-                    $r = 2 * $i;
-                    echo "2 x {$i} = {$r}<br />";
+                    $r = $j * $i;
+                    echo "{$j} x {$i} = {$r}<br />";
                 }
-            ?>
-        </td>
-        <td>
-            2 x 1 = 2<br />
-            2 x 1 = 2<br />
-            2 x 1 = 2<br />
-            2 x 1 = 2<br />
-        </td>
-        <td>
-            2 x 1 = 2<br />
-            2 x 1 = 2<br />
-            2 x 1 = 2<br />
-            2 x 1 = 2<br />
-        </td>
-        <td>
-            2 x 1 = 2<br />
-            2 x 1 = 2<br />
-            2 x 1 = 2<br />
-            2 x 1 = 2<br />
-        </td>
+                echo '</td>';    
+            }
+        ?>
     </tr>
     <tr>
         <td>
