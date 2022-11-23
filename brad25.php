@@ -1,7 +1,7 @@
 <?php
     include 'bradapis.php';
 
-    $ok = checkTWId('Z823456789');
+    $ok = checkTWId('A123456789');
     if ($ok){
         echo 'OK';
     }else{
