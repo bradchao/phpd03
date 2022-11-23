@@ -37,11 +37,22 @@
         return createTWIDByBoth($area, $gender);
     }
     function createTWIDByArea($area){
-
+        $gender = rand(1,2) == 1;
+        return createTWIDByBoth($area, $gender);
     }
 
     function createTWIDByBoth($area, $gender){
+        $tempID = $area;
+        $tempID .= $gender ? '1' : '2';
+        for ($i = 0; $i<7; $i++) $tempID .= rand(0,9);
 
+        for ($i = 0; $i<=9; $i++){
+            if (checkTWId($tempID . $i)){
+                $tempID .= $i;
+                break;
+            }
+        }
+        return $tempID;
     }
 
 
