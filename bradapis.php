@@ -27,4 +27,31 @@
 
         return $isRight;
     }
+
+    function createTWIDByRandom(){
+        $gender = rand(1,2) == 1;
+        return createTWIDByGender($gender);
+    }
+    function createTWIDByGender( $gender = false){
+        $area = substr(LETTERS, rand(0,25), 1);
+        return createTWIDByBoth($area, $gender);
+    }
+    function createTWIDByArea($area){
+
+    }
+
+    function createTWIDByBoth($area, $gender){
+
+    }
+
+
+
+
+
+
+
+
+
+
+
 ?>
