@@ -10,8 +10,8 @@
         'imgs/mingliu.ttc', 'Hello, 資展國際');
 
 
-    header('content-type: image/jpeg');
-    ImageJpeg($gd);
+    //header('content-type: image/jpeg');
+    ImageJpeg($gd, "imgs/span.jpg");
 
     ImageDestroy($gd);
 ?>
