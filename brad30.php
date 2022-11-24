@@ -4,4 +4,6 @@
     while ( $file = readdir($fp) ){
         echo "{$file}<br />";
     }
+
+    closedir($fp);
 ?>
