@@ -1,7 +1,6 @@
 <?php
-
-    $fp = fopen('myfiles/brad1.txt', 'w');
-    fwrite($fp, 'Hello, World');
+    $fp = fopen('myfiles/brad1.txt', 'a');
+    fwrite($fp, 'abc');
     fflush($fp);
     fclose($fp);
 ?>
