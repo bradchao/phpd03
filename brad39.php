@@ -7,5 +7,6 @@
     fflush($fp);
     fclose($fp);
 
-    header("Location: dir1/{$filename}");
+    //header("Location: dir1/{$filename}");
+    echo "<script>window.location.href='dir1/{$filename}';</script>";
 ?>
