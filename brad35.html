@@ -1,6 +1,19 @@
-<form action="brad36.php" method="post">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<form action="brad37.php" method="get">
     Account: <input name="account" /><br />
     Password: <input name="passwd" type="password" /><br />
-    
+    Gender:
+    <input type="radio" name="gender" value='m'/>男
+    <input type="radio" name="gender" value='f' />女<br />
+    興趣:<br />
+    <input type="checkbox" name="habbit[]" value='1' />打電腦
+    <input type="checkbox" name="habbit[]" value='2' />打籃球
+    <input type="checkbox" name="habbit[]" value='3' />打電玩<br />
+    <input type="checkbox" name="habbit[]" value='4' />打麻將
+    <input type="checkbox" name="habbit[]" value='5' />打毛線
+    <input type="checkbox" name="habbit[]" value='6' />打小孩<br />
+    備註:<br />
+    <textarea name="memo"></textarea><br />
+    Icon: <input type="file" name="upload" />
     <input type="submit" value="Register" />
 </form>
