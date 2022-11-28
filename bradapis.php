@@ -77,7 +77,7 @@
         }
 
         function avg(){
-            return sum() / 3;
+            return $this->sum() / 3;
         }
     }
 
