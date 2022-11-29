@@ -1,0 +1,23 @@
+{
+    "class": "一年三班",
+    "teacher": "Tina",
+    "students": [
+        {
+            "name": "Brad",
+            "score" : {
+                "ch" : 54,
+                "eng" : 53,
+                "math" : 65    
+            }
+        },
+        {
+            "name": "Tony",
+            "score" : {
+                "ch" : 50,
+                "eng" : 93,
+                "math" : 75    
+            }
+        }
+    ]
+}
+
