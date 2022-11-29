@@ -68,9 +68,9 @@
         function getMath(){return $this->math;}
         function getName(){return $this->name;}
         function setCh($ch){
-            if ($ch >= 0 && $ch <= 100){
+            //if ($ch >= 0 && $ch <= 100){
                 $this->ch = $ch;
-            }
+            //}
         }
         function sum(){
             return $this->ch +$this->eng + $this->math;
